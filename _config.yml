@@ -9,11 +9,12 @@ domain: blog.gamnation.net
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: leap-day
+remote_theme: pages-themes/leap-day@v0.2.0
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # Leap-day theme settings
 show_downloads: false # Don't show GitHub download links
