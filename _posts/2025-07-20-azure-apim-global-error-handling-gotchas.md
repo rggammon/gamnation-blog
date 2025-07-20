@@ -1,13 +1,20 @@
 ---
-layout: post
-title: "Azure API Management Global Error Handling: Why `<base />` Doesn't Work and What to Do Instead"
+layout: single
+title: "Azure APIM Global Error Handling Gotchas"
 date: 2025-07-20 10:00:00 -0000
-categories: azure apim api-management development
+categories:
+  - azure
+  - development
+tags:
+  - azure
+  - apim
+  - api-management
+  - policies
+  - error-handling
 author: Ryan Gammon
-excerpt: "If you're getting errors like 'Element is not allowed in global context' when trying to use `<base />` in your Azure APIM global policy's `<on-error>` section, you're not alone. Here's why it happens and what to do instead."
+toc: true
+toc_sticky: true
 ---
-
-# Azure API Management Global Error Handling: Why `<base />` Doesn't Work and What to Do Instead
 
 _Or: How I learned to stop worrying and love the policy hierarchy_
 

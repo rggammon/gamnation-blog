@@ -1,28 +1,33 @@
 ---
-layout: page
+layout: single
 title: About
 permalink: /about/
+author_profile: false
 ---
 
-# About Me
+Hi, I'm Ryan! Welcome to my personal blog.
 
-Hi, I'm Ryan! Welcome to my personal blog. With generative AI and GHitHub Copilot,
+With generative AI and GitHub Copilot,
 it is easier than ever to make a post to share things Copilot and I learn, and hopefully
 what we learn can percolate back into future AI models!
 
-Full discloser, AI will be writing most of the content in these posts based on chats related to personal projects.
+Full disclosure, AI will be writing most of the content in these posts based on chats related to personal projects, and I will review it.
 
 ## Get In Touch
 
 Do you see something wrong? Open an issue on GitHub and I will update the post.
 
-- <i class="fas fa-bug"></i> **Issues**: [Report issues with blog posts](https://github.com/rggammon/gamnation-blog/issues)
+- **Issues**: [Report issues with blog posts](https://github.com/rggammon/gamnation-blog/issues)
 
 **Connect with me:**
 
 - <i class="fab fa-github"></i> **GitHub**: [rggammon](https://github.com/rggammon)
-- <i class="fab fa-linkedin"></i> **LinkedIn**: [Ryan Gammon](https://linkedin.com/in/rggammon)
+- <i class="fab fa-linkedin"></i> **LinkedIn**: [rggammon](https://www.linkedin.com/in/rggammon)
 - <i class="fab fa-mastodon"></i> **Mastodon**: [@rggammon@hachyderm.io](https://hachyderm.io/@rggammon)
-- <i class="fas fa-cloud"></i> **Bluesky**: [@yourusername.bsky.social](https://bsky.app/profile/rggammon.bsky.social)
+- <i class="fab fa-bluesky"></i> **Bluesky**: [rggammon](https://bsky.app/profile/rggammon)
+
+I'm always happy to connect with fellow developers and discuss projects, ideas, or anything tech-related!
 
 Thanks for stopping by!
+
+- Ryan and Copilot

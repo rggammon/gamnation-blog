@@ -1,21 +1,122 @@
 # Site settings
 title: Ryan's Blog
 description: >- # this means to ignore newlines until "baseurl:"
-  My personal blog about projects I'm working on, development insights, and tech adventures.
+  Personal blog of Ryan Gammon and his Copilot
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.gamnation.net" # the base hostname & protocol for your site
 domain: blog.gamnation.net
 
+# Theme
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+# Site settings for Minimal Mistakes
+# Available skins: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "air"
+
+# Disable author profile globally
+author_profile: false
+
+# Footer links
+footer:
+  links:
+    - label: "See an issue with a post? Open an issue on  GitHub"
+      icon: "fas fa-fw fa-bug"
+      url: "https://github.com/rggammon/gamnation-blog/issues"
+
+# Reading time
+read_time: true
+
+# Comments
+comments:
+  provider: false
+
+# Analytics
+analytics:
+  provider: false
+
+# Search
+search: true
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
-remote_theme: pages-themes/leap-day
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+timezone: America/Los_Angeles
+
+# Plugins
 plugins:
-  - jekyll-feed
+  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
   - jekyll-remote-theme
 
-# Leap-day theme settings
-show_downloads: false # Don't show GitHub download links
-# google_analytics: YOUR_GA_ID  # Uncomment and add your GA ID if you want analytics
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_sticky: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
